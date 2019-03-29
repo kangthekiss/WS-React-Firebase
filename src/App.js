@@ -1,22 +1,14 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import firebase from './Firebase'
+import User from './components/User'
 
 class App extends Component {
-
-  constructor(props) {
-    super(props)
-    this.ref = firebase().firestore().collection(boards)
-    this.unsubscribe = null
-    this.state = {
-      boards: []
-    }
-  }
 
   render() {
     return (
       <div className="container"> 
-           
+           React Firebase
+
+           <User />
       </div>
     )
   }
